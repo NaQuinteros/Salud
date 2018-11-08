@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-08T05:32:35 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89bf277b-ffda-4892-bdd2-78548c5f20ea">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fecha" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<field name="nombremedico" class="java.lang.String">
+		<fieldDescription><![CDATA[nombremedico]]></fieldDescription>
+	</field>
+	<field name="paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[paciente]]></fieldDescription>
+	</field>
+	<field name="especialidad" class="java.lang.String">
+		<fieldDescription><![CDATA[especialidad]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="213" y="0" width="128" height="30" uuid="5d431031-45ed-4a21-acd1-a6a41523ae76"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Lista de Turnos]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="54" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="560" height="40" uuid="f3f6d5e2-136a-4a87-9e47-1d5a56fab654"/>
+				<staticText>
+					<reportElement x="140" y="20" width="100" height="19" uuid="f2a56b5d-8a68-4792-a8ab-69fa05bdc897"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<text><![CDATA[Especialidad]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="22" width="70" height="18" uuid="1657cba4-3e56-4caa-8e9c-f4b1b128852e"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<text><![CDATA[Médico]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="22" width="90" height="18" uuid="73366849-0aed-468e-8e38-48f63e4b1eda"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<text><![CDATA[Paciente]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="460" y="20" width="80" height="19" uuid="04b9ad67-411d-46f8-9f80-a648337ec277"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<text><![CDATA[Fecha]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="5" width="120" height="30" uuid="c6c5e8e0-93c6-46d7-83a3-4f0ee54c4b40"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombremedico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="5" width="140" height="30" uuid="9006fb5d-ac5e-4f4a-a05c-84afa8d0ad8f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{especialidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="5" width="160" height="30" uuid="3eb7acac-986e-4eaa-abca-654c5ebb33b2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="5" width="150" height="30" uuid="86fafda7-ecc1-4c4c-aa4c-b44dc89ce4a9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
